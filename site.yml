@@ -6,7 +6,7 @@
   hosts: 
     - apps
     - frontends
-    - appdb
+    - appdbs
   gather_facts: false
   roles:
      - repos
