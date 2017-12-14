@@ -3,7 +3,10 @@
 
 
 - name: configure repos on all hosts
-  hosts: all
+  hosts: 
+    - apps
+    - frontends
+    - appdb
   gather_facts: false
   roles:
      - repos
